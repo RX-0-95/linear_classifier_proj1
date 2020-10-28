@@ -17,7 +17,7 @@ The helper function I wrote for extract 2 classes from the train set and test se
         classifier = MyClassifier(2, 28*28) #Create the classifier object 
         Train_data_17,Train_label_17 = extract_two_digit(1,7,Train_data,Train_label) # This function extract data set only contain 1 and 7 from the entire data set
         Test_data_17,Test_label_17 = extract_two_digit(1,7,Test_data,Test_label) # same for the test data set 
-        classifier.train(1,Train_data_17, Train_label_17) # train the classifier 
+        classifier.train(0.6,Train_data_17, Train_label_17) # train the classifier 
 
         #######################Test the classifier##################################
         #When the classifer is trained, it treat the first data set in the train data set as lable 1. For example, if in the train data set for class 2, 8, the first
@@ -41,4 +41,5 @@ The helper function I wrote for extract 2 classes from the train set and test se
 
 
 ## Test Result 
-The test result for (1 7) classifier is 99.2141 % correct in test set. 
+* p = 0: The test result for (1 7) classifier is 99.2141 % correct in test set. 
+* p = 0.6: 99.1216 % correct 
