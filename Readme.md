@@ -38,3 +38,7 @@ The helper function I wrote for extract 2 classes from the train set and test se
         print ("correct: ", correct_count)
         print("wrong: ", wrong_count)
         print("Precision: " ,round(correct_percentage,4),"%")
+
+
+## Test Result 
+The test result for (1 7) classifier is 99.2141 % correct in test set. 
